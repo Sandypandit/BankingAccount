@@ -22,10 +22,16 @@ public class SavingsAccount {
     	SavingsAccount saver2 = new SavingsAccount(3000);
     	
     	saver1.modifyInterestRate(4);
-    	saver1.modifyInterestRate(4);
+    	saver2.modifyInterestRate(4);
     	
     	saver1.calculateMonthlyInterest();
-		saver1.calculateMonthlyInterest();
+    	saver2.calculateMonthlyInterest();
+    	
+    	saver1.modifyInterestRate(5);
+    	saver2.modifyInterestRate(5);
+    	
+    	saver1.calculateMonthlyInterest();
+    	saver2.calculateMonthlyInterest();
     	
 	} 
 
