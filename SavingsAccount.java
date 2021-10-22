@@ -9,8 +9,8 @@ public class SavingsAccount {
         System.out.println("monthly interest"+monthlyInterest);
     }
 
-    public void modifyInterestRate(){ //modifying interest rate
-    	annualInterestRate = savingsBalance*(4/100);
+    public void modifyInterestRate(int interestPercent){ //modifying interest rate
+    	annualInterestRate = savingsBalance*(interestPercent/100);
     	this.annualInterestRate = annualInterestRate;
     }
     
@@ -21,8 +21,8 @@ public class SavingsAccount {
     	SavingsAccount saver1 = new SavingsAccount(2000);
     	SavingsAccount saver2 = new SavingsAccount(3000);
     	
-    	saver1.modifyInterestRate();
-    	saver1.modifyInterestRate();
+    	saver1.modifyInterestRate(4);
+    	saver1.modifyInterestRate(4);
     	
     	saver1.calculateMonthlyInterest();
 		saver1.calculateMonthlyInterest();
