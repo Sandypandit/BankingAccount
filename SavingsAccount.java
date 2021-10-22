@@ -5,16 +5,10 @@ class SavingsAccount{
 	static int annualInterestRate;
     private int savingsBalance;
 
-    public void setSavingsBalance(int savingsBalance){
-        this.savingsBalance = savingsBalance;
-    }
-
-    public int getSavingsBalance(){
-        return savingsBalance;
-    }
 
     public void calculateMonthlyInterest(){
         int monthlyInterest = (savingsBalance*annualInterestRate)/12;
+		savingsBalance += monthlyInterest;
     }
 
     public void modifyInterestRate(int annualInterestRate){
@@ -22,7 +16,6 @@ class SavingsAccount{
     }
 
 
-	
 	public static void main(String[] args) {
 		
 	}
